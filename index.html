@@ -49,12 +49,12 @@
   <a-camera>
     <a-cursor color="#FAFAFA"></a-cursor>
   </a-camera>
-  
-  <a-entity oculus-touch-controls="hand: left"></a-entity>
-  <a-entity oculus-touch-controls="hand: right"></a-entity>
-
-  <a-entity id="teleHand" hand-controls="left" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
-  <a-entity id="pokeHand" hand-controls="right"></a-entity>
+  <a-entity id="cameraRig">
+    <a-entity id="head" camera wasd-controls look-controls></a-entity>
+    <a-entity id="teleHand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+    <a-entity id="pokeHand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+  </a-entity>
+ 
 
   </a-scene>
   </body>
