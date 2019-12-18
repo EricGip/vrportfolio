@@ -2,6 +2,7 @@
   <head>
     <script src="js/aframe-v1.0.0.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
   </head>
 
   <body>
@@ -44,13 +45,16 @@
     <a-entity text="value: Welcome! Press WASD to move; color: #BBB" position="0.45 1.5 -2" scale="2 2 2"
     animation="property: object3D.position.y; to: 1.2; dir: alternate; dur:5000; loop: true"></a-entity>
 
-      
+  <!-- utility -->    
   <a-camera>
     <a-cursor color="#FAFAFA"></a-cursor>
   </a-camera>
   
-  <a-entity hand-controls="left"></a-entity>
-  <a-entity hand-controls="right"></a-entity>
+  <a-entity oculus-touch-controls="hand: left"></a-entity>
+  <a-entity oculus-touch-controls="hand: right"></a-entity>
+
+  <a-entity id="teleHand" hand-controls="left" teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
+  <a-entity id="pokeHand" hand-controls="right"></a-entity>
 
   </a-scene>
   </body>
