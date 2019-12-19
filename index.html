@@ -1,8 +1,8 @@
 <html>
   <head>
     <script src="js/aframe-v1.0.0.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="js/aframe-teleport-controls.min.js"></script>
+    <script src="js/link-controls.js"></script>
   </head>
 
   <body>
@@ -18,6 +18,9 @@
             <a-asset-items id="knuckles" src="assets/ugandan_knuckles/knuckles.gltf"></a-asset-items>
             <a-asset-items id="tails" src="assets/ugandan_tails/tails.gltf"></a-asset-items>
         </a-assets>
+
+
+    <a-link href="vivianstore/index.html" position="0 1.5 1" image="#davis"></a-link>
 
     <a-entity gltf-model="#base" position="0 0 -4.7" rotation="0 90 0" scale="2 2 2"></a-entity>
 
@@ -49,12 +52,17 @@
   <a-camera>
     <a-cursor color="#FAFAFA"></a-cursor>
   </a-camera>
-  <a-entity id="cameraRig">
+
+  <a-entity id="leftHand" link-controls="hand: left"></a-entity>
+  <a-entity id="rightHand" link-controls="hand: right"></a-entity>
+
+  <!--a-entity id="cameraRig">
     <a-entity id="head" camera wasd-controls look-controls></a-entity>
     <a-entity id="teleHand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
     <a-entity id="pokeHand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
-  </a-entity>
+  </a-entity-->
  
+
 
   </a-scene>
   </body>

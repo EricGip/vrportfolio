@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="/js/aframe-v1.0.0.min.js"></script>
+    <script src="/js/link-controls.js"></script>
   </head>
   <body>
     <a-scene>
@@ -37,6 +38,16 @@
 
         <a-light type="ambient"></a-light>
         <a-light type="point" intensity="1" position="2 1 1"></a-light>
+        
+        <a-link href="-" position="0 1.5 1" image="#davis"></a-link>
+
+        <a-camera>
+          <a-cursor color="#FAFAFA"></a-cursor>
+        </a-camera>
+      
+        <a-entity id="leftHand" link-controls="hand: left"></a-entity>
+        <a-entity id="rightHand" link-controls="hand: right"></a-entity>
+        
     </a-scene>
   </body>
 </html>
