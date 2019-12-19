@@ -14,3 +14,7 @@ My goal was to create a gallery for to showcase my girlfriend's small business -
 
 I now have a solid understanding of VR elements, front end elements, 3d modeling, and game design.   
 My next plans are to use Unity or Unreal Engine to design a full-fledged VR app after I start my software engineering career.
+
+To Dos:
+
+   * Add functionality to pokeballs, be able to catch the models!
