@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="/js/aframe-v1.0.0.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+        <a-assets>
+            <a-assets-items id="store" src="assets/yetanothergallery/3rdgallery.gltf"> </a-assets-items>
+            <a-assets-items id="basic" src="assets/vivians/basic.jpeg"></a-assets-items>
+            <a-assets-items id="cherry" src="assets/vivians/cherrybloss.jpeg"></a-assets-items>
+            <a-assets-items id="mello" src="assets/vivians/mello.jpeg"></a-assets-items>
+            <a-assets-items id="todoroki" src="assets/vivians/todoroki.jpeg"></a-assets-items>
+            <a-assets-items id="zenist" src="assets/vivians/zenist.jpeg"></a-assets-items>
+            <a-assets-items id="rose" src="assets/vivians/rose.jpeg"></a-assets-items>
+            <a-assets-items id="mocher" src="assets/vivians/mocher.jpg"></a-assets-items>
+        </a-assets>
+
+        <a-entity gltf-model="#store" position="-3 0 -3" rotation="0 0 0" scale="0.01 0.01 0.01"></a-entity>
+        
+        <!-- front panels-->
+        <a-image src="#zenist" position="-2.8 1.8 -8.7" rotation="0 90 -90" scale="2.2 2.2 2.2"></a-image>
+        <a-image src="#mello" position="-2.8 1.8 2.7" rotation="0 90 -90" scale="2.2 2.2 2.2"></a-image>
+        <a-image src="#todoroki" position="-2.8 1.8 -2.9" rotation="0 90 -90" scale="2.2 2.2 2.2"></a-image>
+        
+        <!-- back panels-->
+        <a-image src="#basic" position="-7.9 1.8 -8.7" rotation="0 90 -90" scale="2 2 2"></a-image>
+        <a-image src="#cherry" position="-7.9 1.8 2.7" rotation="0 90 -90" scale="2 2 2"></a-image>
+        <a-image src="#rose" position="-7.9 1.8 -2.9" rotation="0 90 -90" scale="2 2 2"></a-image>
+
+        <!-- floating stuff-->
+        <a-image src="#mocher" position="0 3 -3" scale="1 1 1"
+        animation="property: object3D.position.y; to:2.5; dir: alternate; dur:5000; loop:true"></a-image>
+
+        <a-entity text="value: Welcome to my shop! Press WASD to move and your cursor to look around!; color: #BBB" position="0 2 -3" scale="3 3 3"
+          animation="property: object3D.position.y; to:1.2; dir: alternate; dur:5000; loop:true"></a-entity>
+
+        <a-light type="ambient"></a-light>
+        <a-light type="point" intensity="1" position="2 1 1"></a-light>
+    </a-scene>
+  </body>
+</html>
