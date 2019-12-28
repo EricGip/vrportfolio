@@ -4,12 +4,17 @@ Created with HTML, Javascript, and Oculus Quest.
    * To view the source code, check out index.html and Vivian.html 
    * assets are just the images and models, this would be more reliable and load faster than calling a CDN for the images.
    * /js/ contains the javascript components that handle eventhandling, touch, portal links, etc. 
-
-Coming from data science, I only knew Python. I started growing an interest in web development from Python's backend library, Django, and found that I would need to learn Javascript, HTML, and CSS to really become a full-stack web developer.  
+   
+-------
 
 # Demo
 --------
 https://oceanic-august.glitch.me/Vivian.html
+
+--------
+
+
+Coming from data science, I only knew Python. I started growing an interest in web development from Python's backend library, Django, and found that I would need to learn Javascript, HTML, and CSS to really become a full-stack web developer.  
 
 This was really intimidating to me as I was more interested in backend & infrastructure but I would have to learn 3 languages just to learn front end?   
     
