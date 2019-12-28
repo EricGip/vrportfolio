@@ -7,6 +7,10 @@ Created with HTML, Javascript, and Oculus Quest.
 
 Coming from data science, I only knew Python. I started growing an interest in web development from Python's backend library, Django, and found that I would need to learn Javascript, HTML, and CSS to really become a full-stack web developer.  
 
+# Demo
+--------
+https://oceanic-august.glitch.me/Vivian.html
+
 This was really intimidating to me as I was more interested in backend & infrastructure but I would have to learn 3 languages just to learn front end?   
     
 I just found out about WebVR and was immediately inspired and eager to design my own project.  
