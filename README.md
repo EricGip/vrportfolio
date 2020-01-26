@@ -1,6 +1,6 @@
 # An interactive VR portfolio made with Aframe (HTML &amp; JS)
 -------
-My goal was to create a gallery for to showcase my girlfriend's small business - designing GameCube controllers in hopes to gain more customers with a *memorable, interactive gallery*.  
+**My goal was to create a gallery for to showcase my girlfriend's small business - designing GameCube controllers in hopes to gain more customers with a *memorable, interactive gallery*.**  
 
 Created with HTML, Javascript, and Oculus Quest.  
    * To view the source code, check out index.html and Vivian.html 
